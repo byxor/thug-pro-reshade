@@ -10,6 +10,8 @@ Reshade Settings for THUG Pro
 
 Copy the contents of the `THUG Pro` directory into the `THUG Pro` game directory (`%appdata%/Local/THUG Pro`).
 
+Now when you open the game, the effects will be loaded.
+
 ## Tweaking
 
 You can tweak the effects by modifying the `.cfg` files in the `THUG Pro/scripts/ReShade/Presets/thugpro` directory.
