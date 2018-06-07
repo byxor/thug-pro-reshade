@@ -1,33 +1,49 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
+
+BACKUP="/tmp"
+
+
+function _show_usage {
     echo "Please provide the arguments: <import/export> <windowsUsername>"
     echo "import: Copies reshade configurations from THUG Pro to git repo."
     echo "export: Copies reshade configurations from git repo to THUG Pro."
-    exit 1
-fi
+}
 
-username="$2"
-thugPro="/mnt/c/Users/$username/AppData/Local/THUG Pro"
 
-thugProScripts="$thugPro/scripts"
-localScripts="THUG Pro/scripts"
+function _transfer {
+    local source="$1"
+    local destination="$2"
 
-if [ "$1" = "export" ]; then
-    source="$localScripts"
-    destination="$thugProScripts"
-elif [ "$1" = "import" ]; then
-    source="$thugProScripts"
-    destination="$localScripts"
-else
-    echo "Invalid 2nd argument."
-    exit 1
-fi
+    echo "Backing up configurations to $BACKUP..."
+    cp -Rf "$destination" "$BACKUP"
 
-backup="/tmp"
-echo "Backing up configurations to $backup..."
-cp -Rf "$destination" $backup
+    rm -Rf "$destination"
+    cp -Rf "$source" "$destination"    
+}
 
-rm -Rf "$destination"
-cp -Rf "$source" "$destination"
 
+function _run {
+    if [ "$#" -ne 2 ]; then
+        _show_usage
+        exit 1
+    fi
+
+    local username="$2"
+    local thugPro="/mnt/c/Users/$username/AppData/Local/THUG Pro"
+
+    local thugProScripts="$thugPro/scripts"
+    local localScripts="THUG Pro/scripts"
+
+    if [ "$1" = "export" ]; then
+        _transfer "$localScripts" "$thugProScripts"
+    elif [ "$1" = "import" ]; then
+        _transfer "$thugProScripts" "$localScripts"
+    else
+        _show_usage
+        exit 1
+    fi    
+}
+
+
+_run $@
