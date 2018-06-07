@@ -8,11 +8,13 @@ Reshade Settings for THUG Pro.
 
 ## Installation
 
-If you have bash, run:
+### If you have bash, run:
 
 ```bash
 $ ./reshade install <windowsUsername>
 ```
+
+### Otherwise:
 
 Copy the contents of the `THUG Pro` directory into the `THUG Pro` game directory (`%appdata%/Local/THUG Pro`).
 
