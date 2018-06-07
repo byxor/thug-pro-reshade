@@ -18,17 +18,19 @@ $ ./reshade install <windowsUsername>
 
 Copy the contents of the `THUG Pro` directory into the `THUG Pro` game directory (`%appdata%/Local/THUG Pro`).
 
-Now when you open the game, the effects will be loaded.
-
 ## Usage
+
+When you open the game, the effects will be loaded.
 
 You can tweak the effects by modifying the `.cfg` files in the `THUG Pro/scripts/ReShade/Presets/thugpro` directory.
 
+When you export effects, the game will load the effects without needing to restart.
+
 Play around and see what effects you can achieve!
 
-Most shaders can be disabled by pressing the Scroll Lock key.
+Most effects can be disabled by pressing the Scroll Lock key.
 
-## Importing configs to Repository
+## Importing effects to Repository
 
 (Requires bash)
 
@@ -36,7 +38,7 @@ Most shaders can be disabled by pressing the Scroll Lock key.
 $ ./reshade import <windowsUsername>
 ```
 
-## Exporting configs to THUG Pro
+## Exporting effects to THUG Pro
 
 (Requires bash)
 
