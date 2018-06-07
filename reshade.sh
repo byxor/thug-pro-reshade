@@ -51,6 +51,8 @@ function _run {
         _transfer "$repositoryShaders" "$thugProShaders"
     elif [ "$1" = "import" ]; then
         _transfer "$thugProShaders" "$repositoryShaders"
+        echo "Triggering reshade to reload..."
+        echo "" >> "$thugProShaders/Shaders_by_Alo81.cfg"
     else
         _show_usage
         exit 1
