@@ -35,19 +35,22 @@ function _run {
     local thugPro="/mnt/c/Users/$username/AppData/Local/THUG Pro"
     local repository="THUG Pro"
 
-    local thugProScripts="$thugPro/scripts"
-    local repositoryScripts="$repository/scripts"
+    local shaders="scripts/ReShade/Presets/thugpro"
+
+    local thugProShaders="$thugPro/$shaders"
+    local repositoryShaders="$repository/$shaders"
 
     local repositoryDll="$repository/dinput8.dll"
 
     if [ "$1" = "install" ]; then
         echo "Installing custom DLL..."
         cp -f "$repositoryDll" "$thugPro"
-        _transfer "$repositoryScripts" "$thugProScripts"
+        echo "Installing shaders and scripts..."
+        cp -Rf "$repository/scripts" "$thugPro/scripts"
     elif [ "$1" = "export" ]; then
-        _transfer "$repositoryScripts" "$thugProScripts"
+        _transfer "$repositoryShaders" "$thugProShaders"
     elif [ "$1" = "import" ]; then
-        _transfer "$thugProScripts" "$repositoryScripts"
+        _transfer "$thugProShaders" "$repositoryShaders"
     else
         _show_usage
         exit 1
