@@ -18,26 +18,24 @@ You can tweak the effects by modifying the `.cfg` files in the `THUG Pro/scripts
 
 Play around and see what effects you can achieve!
 
-## Tips
-
-### Toggling Reshade
+## Toggling Reshade
 
 * Press the Scroll Lock key to toggle the majority of shaders.
 
-### Importing configs to Repository
+## Importing configs to Repository
 
 (Requires bash)
 
 ```bash
-./reshade import <windowsUsername>
+$ ./reshade import <windowsUsername>
 ```
 
-### Exporting configs to THUG Pro
+## Exporting configs to THUG Pro
 
 (Requires bash)
 
 ```bash
-./reshade export <windowsUsername>
+$ ./reshade export <windowsUsername>
 ```
 
 ## Credits
