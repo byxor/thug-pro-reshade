@@ -4,8 +4,7 @@ Reshade Settings for THUG Pro.
 
 ## Preview
 
-<img alt="Before/After Picture" src="comparison.png" width="300">
-
+![Before/After Picture](comparison.png)
 ![Preview of Reshade Effects](preview.png)
 
 ## Installation
