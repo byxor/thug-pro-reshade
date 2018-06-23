@@ -61,4 +61,4 @@ Shaders by:
 * Otis
 
 Special Thanks:
-* Edem (for sending me his reshade configuration, and helping me recover lost files)
+* Edem (for sending me his reshade configuration and helping me recover lost files)
