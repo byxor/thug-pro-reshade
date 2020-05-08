@@ -7,17 +7,22 @@ Reshade Settings for THUG Pro.
 ![Before/After Picture](comparison.png)
 ![Preview of Reshade Effects](preview.png)
 
+_Note: This preview is outdated, but you get the idea._
+
+You can enable some much cooler effects.
+
 ## Installation
 
-### If you have bash, run:
+Copy the contents of the `THUG Pro` directory into the `THUG Pro` game directory (`%appdata%/Local/THUG Pro`).
+
+
+### Alternatively
+
+If you have bash, run:
 
 ```bash
 $ ./reshade install <windowsUsername>
 ```
-
-### Otherwise:
-
-Copy the contents of the `THUG Pro` directory into the `THUG Pro` game directory (`%appdata%/Local/THUG Pro`).
 
 ## Usage
 
