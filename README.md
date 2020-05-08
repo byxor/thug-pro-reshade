@@ -13,8 +13,7 @@ You can enable some much cooler effects.
 
 ## Installation
 
-Copy the contents of the `THUG Pro` directory into the `THUG Pro` game directory (`%appdata%/Local/THUG Pro`).
-
+Copy the contents of this repository's `THUG Pro` directory into your computer's `THUG Pro` directory (check `%appdata%/Local/THUG Pro`).
 
 ### Alternatively
 
