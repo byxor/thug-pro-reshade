@@ -2,7 +2,7 @@
 
 Enhance your graphics with Reshade 3 for THUG Pro.
 
-_Note: This preview is outdated. You can customise the settings to achieve many cooler/cleaner/crazier effects than the ones shown below._
+_**Note:** This preview is outdated. You can customise the settings to achieve many cooler/cleaner/crazier effects than the ones shown below._
 
 ![Before/After Picture](comparison.png)
 ![Preview of Reshade Effects](preview.png)
