@@ -62,3 +62,4 @@ Shaders by:
 
 Special Thanks:
 * Edem (for sending me his reshade configuration and helping me recover lost files)
+* Rav (for getting the DLL injection to work when upgrading to reshade 3)
