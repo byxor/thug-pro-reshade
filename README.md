@@ -1,15 +1,11 @@
 # thug-pro-reshade
 
-Reshade Settings for THUG Pro.
-
-## Preview
+Enhance your graphics with Reshade 3 for THUG Pro.
 
 ![Before/After Picture](comparison.png)
 ![Preview of Reshade Effects](preview.png)
 
-_Note: This preview is outdated, but you get the idea._
-
-You can enable some much cooler effects.
+_Note: This preview is outdated, but you get the idea. You can customise it to achieve many cooler/cleaner/crazier effects than the ones shown above._
 
 ## Installation
 
@@ -17,11 +13,7 @@ Copy the contents of this repository's `THUG Pro` directory into your computer's
 
 ### Alternatively
 
-If you have bash, run:
-
-```bash
-$ ./reshade install <windowsUsername>
-```
+If you have bash, run `./reshade install <windowsUsername>`
 
 ## Usage
 
