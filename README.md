@@ -14,7 +14,9 @@ Copy the contents of this repository's `THUG Pro` directory into your computer's
 ## Usage
 
 When you open the game, the effects will be loaded.
+
 Open the reshade menu with the Home key to enable/edit/disable shaders.
+
 Most effects can be temporarily disabled by pressing the Scroll Lock key.
 
 ## Special Thanks:
