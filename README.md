@@ -1,6 +1,6 @@
 # thug-pro-reshade
 
-Enhance your graphics with Reshade 3 for THUG Pro.
+Enhance/tweak THUG Pro's graphics with Reshade.
 
 ![Visual comparison of before/after](comparison.gif)
 (Screenshots by AK)
